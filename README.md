@@ -9,6 +9,6 @@
 ```sh
 parser.py
 parser.py -f /logs/
-parser.py -f /logs/access_20k
+parser.py -f /logs/access_low
 ```
 

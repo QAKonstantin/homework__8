@@ -6,7 +6,7 @@ import os
 from collections import defaultdict
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-f', dest='path', action='store', default="/logs/access_20k", help='Path to logs')
+parser.add_argument('-f', dest='path', action='store', default="/logs/access_low", help='Path to logs')
 args = parser.parse_args()
 
 dict_ip = defaultdict(
