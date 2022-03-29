@@ -66,7 +66,7 @@ if os.path.isfile(args.path):
     filepath = args.path
     result = logs_analyzing(filepath)
 
-    with open(os.getcwd() + '\\' + filepath.split('\\')[-1].replace(".", "_") + ".json", "w") as jsonfile:
+    with open(filepath.split('\\')[-1].replace(".", "_") + ".json", "w") as jsonfile:
         json.dump(result, jsonfile, indent=4)
         print(json.dumps(result, indent=4))
 
@@ -74,6 +74,6 @@ elif os.path.isfile(args.path) == False:
     for filepath in glob.glob(f'{args.path}' + '*.log'):
         result = logs_analyzing(filepath)
 
-        with open(os.getcwd() + '\\' + filepath.split('\\')[-1].replace(".", "_") + ".json", "w") as jsonfile:
+        with open(filepath.split('\\')[-1].replace(".", "_") + ".json", "w") as jsonfile:
             json.dump(result, jsonfile, indent=4)
             print(json.dumps(result, indent=4))
