@@ -19,7 +19,6 @@ dict_time = defaultdict(
 )
 
 dict_count = {"TOTAL REQUESTS": 0, "GET": 0, "POST": 0, "HEAD": 0, "PUT": 0, "OPTIONS": 0, "DELETE": 0}
-count = 0
 
 
 def logs_analyzing(filename):
